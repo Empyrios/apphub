@@ -44,7 +44,7 @@ The URL is an expected address, not a verified live deployment.
 
 The hub stores only favourite app IDs and the appearance theme in `localStorage` under `empyrios-apphub-v1`. It does not store account data or read another app's data. The hub and app cards are public and contain no personal or secret data.
 
-**Current publication status:** AppHub, DuoQuest and WealthTrack have successful GitHub Pages deployment runs. Dayforge is maintained separately. Launch links are enabled for apps with deployment confirmation; check availability from your own browser if a newly deployed site has not propagated yet. Unreleased projects remain Planned or In progress without launch buttons.
+**Current publication status:** AppHub, DuoQuest, WealthTrack and TutorForge have successful GitHub Pages deployments. Dayforge is maintained independently. StudyForge's complete MVP is temporarily staged in a feature branch pending its own repository. Launch buttons are enabled only after deployment confirmation. Personal data remains browser-local and should not be committed to GitHub.
 
 ## Update the app list
 

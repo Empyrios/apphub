@@ -7,8 +7,8 @@ Updated: 1 November 2026. This file records the build order; it is not a promise
 | 0 | Dayforge | Existing app | Maintain independently |
 | 1 | DuoQuest | Deployed independently | Confirm migration data and close Dayforge redirect PR |
 | 2 | WealthTrack | Deployed | Verify real-device use and refine the MVP |
-| 3 | TutorForge | Independent repository, CI passing | Enable GitHub Pages, verify deployment, then publish AppHub launch link |
-| 4 | StudyForge | Planned | Revision scheduling, flashcards and MCQ banks |
+| 3 | TutorForge | Deployed independently | Personal-data safeguards needed before real pupils |
+| 4 | StudyForge | MVP built and source staged | Create an independent repository, publish Pages, verify live app |
 | 5 | JobPilot | Existing AutoApply project | Review existing repository and implement responsible application workflows |
 | 6 | LocalAI Lab | Planned | Hardware and model compatibility |
 | 7 | CoachDesk | Planned | Learner operations |
@@ -24,4 +24,4 @@ Updated: 1 November 2026. This file records the build order; it is not a promise
 
 **Privacy:** Financial, tutoring and study data should never be committed to source control. Browser-local storage should not be represented as encrypted or synced between devices. Do not put real banking credentials into WealthTrack.
 
-**Current build:** TutorForge is back in active development. Its MVP is implemented and tested, with independent GitHub publication still required. After TutorForge, StudyForge remains next.
+**Current build:** StudyForge v1 has been implemented and tested, with source temporarily staged on a separate AppHub branch pending an independent GitHub repository and Pages setup.
