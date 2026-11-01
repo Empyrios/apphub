@@ -7,7 +7,7 @@ Updated: 1 November 2026. This file records the build order; it is not a promise
 | 0 | Dayforge | Existing app | Maintain independently |
 | 1 | DuoQuest | Deployed independently | Confirm migration data and close Dayforge redirect PR |
 | 2 | WealthTrack | Deployed | Verify real-device use and refine the MVP |
-| 3 | TutorForge | MVP built locally | Create independent repo, enable Pages and verify before launching |
+| 3 | TutorForge | Independent repository, CI passing | Enable GitHub Pages, verify deployment, then publish AppHub launch link |
 | 4 | StudyForge | Planned | Revision scheduling, flashcards and MCQ banks |
 | 5 | JobPilot | Existing AutoApply project | Review existing repository and implement responsible application workflows |
 | 6 | LocalAI Lab | Planned | Hardware and model compatibility |
