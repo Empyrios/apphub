@@ -44,7 +44,7 @@ The URL is an expected address, not a verified live deployment.
 
 The hub stores only favourite app IDs and the appearance theme in `localStorage` under `empyrios-apphub-v1`. It does not store account data or read another app's data. The hub and app cards are public and contain no personal or secret data.
 
-**Current publication status:** Dayforge and DuoQuest have code in GitHub, but their public website availability has not been verified. The 'Try website' links are provisional. Other projects are marked Planned or In progress without false launch buttons.
+**Current publication status:** AppHub, DuoQuest and WealthTrack have successful GitHub Pages deployment runs. Dayforge is maintained separately. Launch links are enabled for apps with deployment confirmation; check availability from your own browser if a newly deployed site has not propagated yet. Unreleased projects remain Planned or In progress without launch buttons.
 
 ## Update the app list
 
