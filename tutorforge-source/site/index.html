@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0d131b">
+<meta name="color-scheme" content="dark">
+<meta name="description" content="A calm tutoring workspace for learners, lessons, homework and payments. Local-first and GBP-ready.">
+<title>TutorForge | Teach with clarity</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/svg+xml" href="icons/icon.svg">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <a class="brand" href="#dashboard"><span class="brand-icon">✳</span><span>Tutor<span class="brand-accent">Forge</span><small>YOUR TEACHING SPACE</small></span></a>
+    <div class="sidebar-heading">WORKSPACE</div>
+    <nav id="side-nav" aria-label="Main navigation"></nav>
+    <div class="sidebar-footer"><div class="privacy-indicator">●</div><div><b>Private workspace</b><span>Saved in this browser only</span></div></div>
+    <a class="hub-link" href="https://empyrios.github.io/apphub/" target="_blank" rel="noopener noreferrer">↗ Go to AppHub</a>
+  </aside>
+  <div class="workspace">
+    <header class="topbar">
+      <div class="topbar-left"><span class="mobile-logo" aria-hidden="true">✳</span><span class="crumb">WORKSPACE <span class="crumb-divider">/</span> <strong id="crumb-current">Overview</strong></span></div>
+      <div class="topbar-right"><span class="storage-label"><span class="storage-light"></span> On-device</span><button class="avatar" id="open-settings" type="button" title="Settings" aria-label="Open Settings">TF</button></div>
+    </header>
+    <main id="app" tabindex="-1"></main>
+  </div>
+  <nav class="bottom-nav" id="bottom-nav" aria-label="Mobile navigation"></nav>
+</div>
+<dialog id="editor" aria-labelledby="dialog-title"></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+<input id="backup-upload" type="file" accept=".json,application/json" hidden>
+<script src="app.mjs" type="module"></script>
+</body>
+</html>
