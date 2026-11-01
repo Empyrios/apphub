@@ -1,0 +1,12 @@
+{
+  "name": "empyrios-apphub",
+  "version": "1.0.0",
+  "description": "A standalone mobile-first launcher for independent apps by Empyrios Studio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check site/app.mjs && node --check site/catalog.mjs && node --check site/logic.mjs && node --check site/sw.js"
+  },
+  "engines": {"node": ">=22"}
+}
