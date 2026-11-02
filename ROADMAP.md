@@ -11,7 +11,7 @@ Updated: 2 November 2026. This file records the build order; it is not a promise
 | 4 | StudyForge | Deployed | Verify study flows on mobile; plan lecture imports |
 | 5 | JobPilot | Deployed from AutoApply repo | Verify application tracking on mobile; consider renaming repository |
 | 6 | LocalAI Lab | Deployed | Test custom hardware profiles and validate model estimates on real devices |
-| 7 | Weave Lab | Advanced MVP implemented and tested, source staged | Create independent repository and enable Pages; integrate exact Weave engine adapter next |
+| 7 | Weave Lab | Advanced 70-test research release packaged; older prototype staged | Move current source into a private standalone repository; integrate exact Weave engine adapter and regression fixtures |
 | 8 | LifeOS | Planned | Integrate productivity features |
 | 9 | TripCraft | Planned | Travel planning and budgets |
 | 10 | DealHunter | Planned | Price tracking with permitted sources |
@@ -23,4 +23,4 @@ Updated: 2 November 2026. This file records the build order; it is not a promise
 
 **Privacy:** Financial, tutoring and study data should never be committed to source control. Browser-local storage should not be represented as encrypted or synced between devices. Do not put real banking credentials into WealthTrack.
 
-**Current build:** Weave Lab v0.1 developer workbench has been implemented and passed 26 automated logic tests plus mobile/desktop browser flows. Its source is staged on an isolated AppHub branch, awaiting an independent repository and GitHub Pages. Priority after its release is an authoritative game-engine adapter; the battle proxy is not exact gameplay.
+**Current build:** Weave Lab v0.1 advanced research suite has passed 70 automated tests plus mobile/desktop browser flows. The latest source is packaged locally; the public AppHub staging branch contains an earlier 26-test prototype and must not be mistaken for the latest version. Next priority is a private standalone repo followed by an exact, source-fingerprinted Weave engine adapter; the current simulation proxy is not exact full-match gameplay.
