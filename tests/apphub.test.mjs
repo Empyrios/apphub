@@ -3,21 +3,22 @@ import assert from 'node:assert/strict';
 import {APPS} from '../site/catalog.mjs';
 import {validateCatalog,matchApps,normaliseFavourites,statusCounts,isSafeLink} from '../site/logic.mjs';
 
-test('catalog validates and includes exactly 13 intentional apps',()=>{
+test('catalog validates and includes exactly 12 intentional apps',()=>{
  assert.equal(validateCatalog(APPS),true);
- assert.equal(APPS.length,13);
- assert.deepEqual(new Set(APPS.map(a=>a.id)).size,13);
- for(const app of ['dayforge','duoquest','jobpilot','tutorforge','studyforge','weavelab','wealthtrack','localai','coachdesk','lifeos','tripcraft','dealhunter','creaturelife'])assert.ok(APPS.find(x=>x.id===app),app);
+ assert.equal(APPS.length,12);
+ assert.deepEqual(new Set(APPS.map(a=>a.id)).size,12);
+ assert.equal(APPS.some(a=>a.id==='coachdesk'),false);
+ for(const app of ['dayforge','duoquest','jobpilot','tutorforge','studyforge','weavelab','wealthtrack','localai','lifeos','tripcraft','dealhunter','creaturelife'])assert.ok(APPS.find(x=>x.id===app),app);
 });
-test('status summary matches app data',()=>assert.deepEqual(statusCounts(APPS),{total:13,built:6,building:1,planned:6}));
+test('status summary matches app data',()=>assert.deepEqual(statusCounts(APPS),{total:12,built:7,building:0,planned:5}));
 test('search finds terms across descriptions and features',()=>{
  assert.deepEqual(matchApps(APPS,{query:'spaced repetition'}).map(a=>a.id),['studyforge']);
  assert.deepEqual(matchApps(APPS,{query:'VRAM'}).map(a=>a.id),['localai']);
  assert.deepEqual(matchApps(APPS,{query:'xyz-no-results'}),[]);
 });
 test('status and category filters intersect',()=>{
- assert.deepEqual(matchApps(APPS,{filter:'planned',category:'Education'}).map(a=>a.id),['coachdesk']);
- assert.deepEqual(matchApps(APPS,{filter:'built'}).map(a=>a.id),['dayforge','duoquest','wealthtrack','tutorforge','studyforge','jobpilot']);
+ assert.deepEqual(matchApps(APPS,{filter:'planned',category:'Education'}).map(a=>a.id),[]);
+ assert.deepEqual(matchApps(APPS,{filter:'built'}).map(a=>a.id),['dayforge','duoquest','wealthtrack','tutorforge','studyforge','jobpilot','localai']);
 });
 test('favourites are normalised and pinned first in all apps',()=>{
  assert.deepEqual(normaliseFavourites(['duoquest','duoquest','bogus','dayforge',34],APPS),['duoquest','dayforge']);

@@ -1,6 +1,6 @@
 # Empyrios App Studio roadmap
 
-Updated: 1 November 2026. This file records the build order; it is not a promise of dates or background work.
+Updated: 2 November 2026. This file records the build order; it is not a promise of dates or background work.
 
 | Priority | App | Status | Next action |
 |---:|---|---|---|
@@ -10,13 +10,12 @@ Updated: 1 November 2026. This file records the build order; it is not a promise
 | 3 | TutorForge | Deployed independently | Personal-data safeguards needed before real pupils |
 | 4 | StudyForge | Deployed | Verify study flows on mobile; plan lecture imports |
 | 5 | JobPilot | Deployed from AutoApply repo | Verify application tracking on mobile; consider renaming repository |
-| 6 | LocalAI Lab | Independent repository, source committed | Enable Pages and verify deployment before enabling launch |
-| 7 | CoachDesk | Planned | Learner operations |
-| 8 | Weave Lab | Planned | Developer battle-testing tools |
-| 9 | LifeOS | Planned | Integrate productivity features |
-| 10 | TripCraft | Planned | Travel planning and budgets |
-| 11 | DealHunter | Planned | Price tracking with permitted sources |
-| 12 | CreatureLife | Planned | Original creature life simulation |
+| 6 | LocalAI Lab | Deployed | Test custom hardware profiles and validate model estimates on real devices |
+| 7 | Weave Lab | Planned | Developer battle-testing tools |
+| 8 | LifeOS | Planned | Integrate productivity features |
+| 9 | TripCraft | Planned | Travel planning and budgets |
+| 10 | DealHunter | Planned | Price tracking with permitted sources |
+| 11 | CreatureLife | Planned | Original creature life simulation |
 
 **Separation:** Each app is a distinct repository. AppHub is a launcher, not a monorepo.
 
@@ -24,4 +23,4 @@ Updated: 1 November 2026. This file records the build order; it is not a promise
 
 **Privacy:** Financial, tutoring and study data should never be committed to source control. Browser-local storage should not be represented as encrypted or synced between devices. Do not put real banking credentials into WealthTrack.
 
-**Current build:** LocalAI Lab v1 is implemented, passing 19 unit tests and browser interaction checks. The standalone repository is now populated; Pages deployment confirmation is pending. The next planned project is CoachDesk.
+**Current build:** LocalAI Lab v1 is implemented, passing 19 unit tests and browser interaction checks. The standalone repository is now deployed successfully. The next planned project is Weave Lab.
