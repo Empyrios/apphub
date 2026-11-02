@@ -1,0 +1,11 @@
+{
+  "name": "weave-lab",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "description": "Weave Lab: deterministic developer workbench for Loom, roster and combat tuning",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check site/data.mjs && node --check site/engine.mjs && node --check site/simulation.mjs && node --check site/report-inspector.mjs && node --check site/app.mjs && node --check site/sw.js"
+  }
+}
