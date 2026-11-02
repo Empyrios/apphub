@@ -10,7 +10,7 @@ Updated: 1 November 2026. This file records the build order; it is not a promise
 | 3 | TutorForge | Deployed independently | Personal-data safeguards needed before real pupils |
 | 4 | StudyForge | Deployed | Verify study flows on mobile; plan lecture imports |
 | 5 | JobPilot | Deployed from AutoApply repo | Verify application tracking on mobile; consider renaming repository |
-| 6 | LocalAI Lab | Standalone MVP tested, source staged | Create independent repository, enable Pages and verify deployment |
+| 6 | LocalAI Lab | Independent repository, source committed | Enable Pages and verify deployment before enabling launch |
 | 7 | CoachDesk | Planned | Learner operations |
 | 8 | Weave Lab | Planned | Developer battle-testing tools |
 | 9 | LifeOS | Planned | Integrate productivity features |
@@ -24,4 +24,4 @@ Updated: 1 November 2026. This file records the build order; it is not a promise
 
 **Privacy:** Financial, tutoring and study data should never be committed to source control. Browser-local storage should not be represented as encrypted or synced between devices. Do not put real banking credentials into WealthTrack.
 
-**Current build:** LocalAI Lab v1 is implemented, passing 19 unit tests and browser interaction checks. The source is staged under a separate AppHub branch while an independent repository and Pages deployment are pending. The next planned project is CoachDesk.
+**Current build:** LocalAI Lab v1 is implemented, passing 19 unit tests and browser interaction checks. The standalone repository is now populated; Pages deployment confirmation is pending. The next planned project is CoachDesk.
