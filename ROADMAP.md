@@ -8,8 +8,8 @@ Updated: 1 November 2026. This file records the build order; it is not a promise
 | 1 | DuoQuest | Deployed independently | Confirm migration data and close Dayforge redirect PR |
 | 2 | WealthTrack | Deployed | Verify real-device use and refine the MVP |
 | 3 | TutorForge | Deployed independently | Personal-data safeguards needed before real pupils |
-| 4 | StudyForge | Independent repository, tests passing | Enable Pages and verify its deployment |
-| 5 | JobPilot | v1 code built in AutoApply repo, tests passing | Enable Pages, verify site, consider renaming repo to JobPilot |
+| 4 | StudyForge | Deployed | Verify study flows on mobile; plan lecture imports |
+| 5 | JobPilot | Deployed from AutoApply repo | Verify application tracking on mobile; consider renaming repository |
 | 6 | LocalAI Lab | Planned | Hardware and model compatibility |
 | 7 | CoachDesk | Planned | Learner operations |
 | 8 | Weave Lab | Planned | Developer battle-testing tools |
@@ -24,4 +24,4 @@ Updated: 1 November 2026. This file records the build order; it is not a promise
 
 **Privacy:** Financial, tutoring and study data should never be committed to source control. Browser-local storage should not be represented as encrypted or synced between devices. Do not put real banking credentials into WealthTrack.
 
-**Current build:** StudyForge has moved to its independent repository; JobPilot v1 has been implemented in the existing AutoApply repository. Both await verified GitHub Pages deployment. The next planned app is LocalAI Lab.
+**Current build:** StudyForge and JobPilot v1 are deployed successfully. The next planned app is LocalAI Lab.
