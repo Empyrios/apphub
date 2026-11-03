@@ -44,7 +44,7 @@ The URL is an expected address, not a verified live deployment.
 
 The hub stores only favourite app IDs and the appearance theme in `localStorage` under `empyrios-apphub-v1`. It does not store account data or read another app's data. The hub and app cards are public and contain no personal or secret data.
 
-**Current publication status:** AppHub, DuoQuest, WealthTrack, TutorForge, StudyForge, JobPilot and LocalAI Lab have successful GitHub Pages deployments. Dayforge remains maintained independently. The launcher shows 12 projects in total, with unpublished apps clearly marked planned. Browser-local app data should not be committed to GitHub.
+**Current publication status:** AppHub, DuoQuest, WealthTrack, TutorForge, StudyForge, JobPilot, LocalAI Lab and Weave Lab have successful GitHub Pages deployments. Dayforge remains maintained independently. The launcher shows 12 projects in total, with unpublished apps clearly marked planned. Browser-local app data should not be committed to GitHub.
 
 ## Update the app list
 
