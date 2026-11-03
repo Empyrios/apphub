@@ -14,8 +14,8 @@ Updated: 3 November 2026. This file records the build order; it is not a promise
 | 7 | Weave Lab | Standalone v1.1 research app deployed with passing CI | Build verified private v0.2 exact engine adapter for canonical 1,000-match runs; preserve provenance boundary |
 | 8 | DealHunter | v1.0 independently deployed with passing CI | Verify Android PWA and start authorised retailer-source evaluation |
 | 9 | LifeOS | v1.0 source committed; 41 GitHub tests passed, Pages deployment blocked | Owner enables GitHub Actions under Settings → Pages, then reruns deployment |
+| 10 | CreatureLife | Source committed; 56 GitHub tests passed; deployment blocked by missing Pages setup | Owner enables GitHub Actions Pages source in settings; rerun workflow; verify site on Android |
 | 11 | TripCraft | Deferred at owner request | No active work unless explicitly reactivated |
-| 10 | CreatureLife | v1.0 local source complete; 56 tests and browser smoke checks passed | Create independent public repository, commit source, enable Pages and deploy |
 
 **Separation:** Each app is a distinct repository. AppHub is a launcher, not a monorepo.
 
@@ -23,4 +23,4 @@ Updated: 3 November 2026. This file records the build order; it is not a promise
 
 **Privacy:** Financial, tutoring and study data should never be committed to source control. Browser-local storage should not be represented as encrypted or synced between devices. Do not put real banking credentials into WealthTrack.
 
-**Current build:** Weave Lab is independently deployed, includes a versioned experiment runner and synthetic analysis, and has a successful latest CI deployment. The 1,000 canonical v0.2 study is blocked until the full roster engine adapter is validated. DealHunter v1.0 is now deployed independently with passing GitHub Pages CI; price tracking currently uses manually recorded observations. LifeOS source is committed to Empyrios/lifeos with CI tests passing, but GitHub Pages requires owner enablement. CreatureLife is next: full functional v1.0 source is locally verified and awaiting a standalone repository. TripCraft is explicitly deferred by the owner.
+**Current build:** Weave Lab is independently deployed, includes a versioned experiment runner and synthetic analysis, and has a successful latest CI deployment. The 1,000 canonical v0.2 study is blocked until the full roster engine adapter is validated. DealHunter v1.0 is now deployed independently with passing GitHub Pages CI; price tracking currently uses manually recorded observations. LifeOS source is committed to Empyrios/lifeos with CI tests passing, but GitHub Pages requires owner enablement. CreatureLife v1.0 source is committed to its standalone GitHub repository and passed all 56 GitHub unit tests. Its deployment awaits manual Pages enablement in repository settings. TripCraft is explicitly deferred by the owner.
