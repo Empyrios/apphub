@@ -19,7 +19,7 @@ test('search finds terms across descriptions and features',()=>{
 });
 test('status and category filters intersect',()=>{
  assert.deepEqual(matchApps(APPS,{filter:'planned',category:'Education'}).map(a=>a.id),[]);
- assert.deepEqual(matchApps(APPS,{filter:'built'}).map(a=>a.id),['dayforge','duoquest','wealthtrack','tutorforge','studyforge','jobpilot','localai','weavelab','dealhunter']);
+ assert.deepEqual(matchApps(APPS,{filter:'built'}).map(a=>a.id),['dayforge','duoquest','wealthtrack','tutorforge','studyforge','jobpilot','localai','weavelab','dealhunter','creaturelife']);
 });
 test('favourites are normalised and pinned first in all apps',()=>{
  assert.deepEqual(normaliseFavourites(['duoquest','duoquest','bogus','dayforge',34],APPS),['duoquest','dayforge']);
