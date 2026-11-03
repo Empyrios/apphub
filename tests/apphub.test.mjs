@@ -10,15 +10,16 @@ test('catalog validates and includes exactly 12 intentional apps',()=>{
  assert.equal(APPS.some(a=>a.id==='coachdesk'),false);
  for(const app of ['dayforge','duoquest','jobpilot','tutorforge','studyforge','weavelab','wealthtrack','localai','lifeos','tripcraft','dealhunter','creaturelife'])assert.ok(APPS.find(x=>x.id===app),app);
 });
-test('status summary matches app data',()=>assert.deepEqual(statusCounts(APPS),{total:12,built:8,building:1,planned:3}));
+test('status summary matches app data',()=>assert.deepEqual(statusCounts(APPS),{total:12,built:9,building:0,planned:3}));
 test('search finds terms across descriptions and features',()=>{
  assert.deepEqual(matchApps(APPS,{query:'spaced repetition'}).map(a=>a.id),['studyforge']);
  assert.deepEqual(matchApps(APPS,{query:'VRAM'}).map(a=>a.id),['localai']);
  assert.deepEqual(matchApps(APPS,{query:'xyz-no-results'}),[]);
+ assert.deepEqual(matchApps(APPS,{query:'price history'}).map(a=>a.id),['dealhunter']);
 });
 test('status and category filters intersect',()=>{
  assert.deepEqual(matchApps(APPS,{filter:'planned',category:'Education'}).map(a=>a.id),[]);
- assert.deepEqual(matchApps(APPS,{filter:'built'}).map(a=>a.id),['dayforge','duoquest','wealthtrack','tutorforge','studyforge','jobpilot','localai','weavelab']);
+ assert.deepEqual(matchApps(APPS,{filter:'built'}).map(a=>a.id),['dayforge','duoquest','wealthtrack','tutorforge','studyforge','jobpilot','localai','weavelab','dealhunter']);
 });
 test('favourites are normalised and pinned first in all apps',()=>{
  assert.deepEqual(normaliseFavourites(['duoquest','duoquest','bogus','dayforge',34],APPS),['duoquest','dayforge']);
