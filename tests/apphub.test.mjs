@@ -10,7 +10,7 @@ test('catalog validates and includes exactly 12 intentional apps',()=>{
  assert.equal(APPS.some(a=>a.id==='coachdesk'),false);
  for(const app of ['dayforge','duoquest','jobpilot','tutorforge','studyforge','weavelab','wealthtrack','localai','lifeos','tripcraft','dealhunter','creaturelife'])assert.ok(APPS.find(x=>x.id===app),app);
 });
-test('status summary matches app data',()=>assert.deepEqual(statusCounts(APPS),{total:12,built:9,building:1,planned:2}));
+test('status summary matches app data',()=>assert.deepEqual(statusCounts(APPS),{total:12,built:9,building:2,planned:1}));
 test('search finds terms across descriptions and features',()=>{
  assert.deepEqual(matchApps(APPS,{query:'spaced repetition'}).map(a=>a.id),['studyforge']);
  assert.deepEqual(matchApps(APPS,{query:'VRAM'}).map(a=>a.id),['localai']);
